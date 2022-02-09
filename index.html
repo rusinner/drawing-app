@@ -12,9 +12,12 @@
         <div id="toolbar">
             <h1>Draw</h1>
             <input type="color" name = "stroke" id = "stroke">
-            <label for="linewidth">Line Width</label>
-            <input type="number" name = "linewidth" value ="5" id="linewidth">
-            <button id="clear">clear</button>
+            <!-- <label for="linewidth">Line Width</label> -->
+            <input type="range" name = "linewidth" value ="5" id="linewidth">
+            <button id="clear">Clear</button>
+        </div>
+        <div class="drawing-board">
+            <canvas class="drawing-board"></canvas>
         </div>
     </section>
 
