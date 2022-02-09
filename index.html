@@ -8,13 +8,15 @@
     <title>Drawing App</title>
 </head>
 <body>
-    <div class="options">
-        <label for="colorpicker">Color</label>
-        <input type="color" id = "colorpicker" value = "black">
-        <label for="pen-size"></label>
-        <input type="range" id = "penSize">
-    </div>
-<canvas id = "canvas"></canvas>
+    <section class="container">
+        <div id="toolbar">
+            <h1>Draw</h1>
+            <input type="color" name = "stroke" id = "stroke">
+            <label for="linewidth">Line Width</label>
+            <input type="number" name = "linewidth" value ="5" id="linewidth">
+            <button id="clear">clear</button>
+        </div>
+    </section>
 
 
     <script src="./main.js" defer></script>
