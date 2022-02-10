@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawing App</title>
+    <title>Painting App</title>
 </head>
 <body>
-    <section class="container">
-        <div id="toolbar">
-            <h1>Draw</h1>
-            <input type="color" name = "stroke" id = "stroke">
-            <!-- <label for="linewidth">Line Width</label> -->
-            <input type="range" name = "linewidth" min ="0" max = "20"  id="linewidth">
-            <button id="clear">Clear</button>
-        </div>
-        <div class="drawing-board">
-            <canvas id="drawing-board"></canvas>
-        </div>
-    </section>
+    <div class="field">
+       <canvas id="canvas"></canvas>
+       <div class="tools">
+           <button type = "button" class = "button">Undo</button>
+           <button type = "button" class = "button">Clear</button>
+
+           <div class="color-field" style = "background:red"></div>
+           <div class="color-field" style = "background:blue"></div>
+           <div class="color-field" style = "background:green"></div>
+           <div class="color-field" style = "background:yellow"></div>
+
+          <input type="color" class = "color-picker">
+          <input type="range" min = "1" max ="100" class = "pen-range">
 
 
-    <script src="./main.js" defer></script>
+       </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
