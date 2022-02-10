@@ -23,8 +23,9 @@ toolbar.addEventListener("change",e => {
     if (e.target.id === "stroke"){
         ctx.strokeStyle = e.target.value;
     }
+});
 
-    
+toolbar.addEventListener("oninput",e => {
     if(e.target.id === "lineWidth"){
         ctx.lineWidth = e.target.value;
     }
