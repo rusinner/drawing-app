@@ -8,10 +8,34 @@ body{
     background: #313131;
 }
 
+canvas{
+    box-shadow:-3px 2px 9px 8px black ;
+    cursor: pointer;
+   
+}
+
 .tools{
     display:flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 5rem;
+.color-picker{
+    align-self: center;
+    margin: 0 2%;
+    height:2rem ;
+    width:2rem;
+    min-width:2rem;
+    max-width: 2rem;
+}
+
+.pen-range{
+    align-self: center;
+    margin:0 2%;
+    width:7rem;
+    height:2rem;
+    cursor:pointer;
+}
+
     .color-field{
         height:2rem;
         width:2rem;
@@ -21,6 +45,27 @@ body{
         cursor:pointer;
         display:inline-block;
         border:2px solid white;
+        color: white;
+        background:#222;
+        margin: 0 2%;
+}
 
-    }
+.color-picker{
+    align-self: center;
+    cursor: pointer;
+    width:5rem;
+    height:2.4rem;
+}
+
+button{
+    align-self: center;
+    width:25vw;
+    height:5vh;
+    border:2px solid white;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 2%;
+}
 }
