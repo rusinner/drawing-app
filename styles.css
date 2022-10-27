@@ -1,52 +1,37 @@
 body {
   margin: 0;
   padding: 2%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   overflow: hidden;
   background: #313131;
 }
 
 canvas {
-  -webkit-box-shadow: -3px 2px 9px 8px black;
-          box-shadow: -3px 2px 9px 8px black;
+  box-shadow: -3px 2px 9px 8px black;
   cursor: pointer;
 }
 
 .tools {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
   margin-top: 2rem;
 }
-
 .tools .color-picker {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin: 0 2%;
   height: 2rem;
   width: 2rem;
   min-width: 2rem;
   max-width: 2rem;
 }
-
 .tools .pen-range {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin: 0 2%;
   width: 7rem;
   height: 2rem;
   cursor: pointer;
 }
-
 .tools .color-field {
   height: 2rem;
   width: 2rem;
@@ -60,20 +45,14 @@ canvas {
   background: #222;
   margin: 0 2%;
 }
-
 .tools .color-picker {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   cursor: pointer;
   width: 5rem;
   height: 2.4rem;
 }
-
 .tools button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 25vw;
   height: 5vh;
   border: 2px solid white;
@@ -89,38 +68,20 @@ canvas {
     overflow: scroll;
   }
   .field {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .tools {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   .tools {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .tools button {
     width: 10vw;
     margin: 0;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
